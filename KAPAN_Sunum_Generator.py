@@ -1,8 +1,3 @@
-# Bu script, python-pptx kütüphanesini kullanarak KAPAN proje sunumunu oluşturan bir .pptx dosyası üretir.
-# Öncelikle, pip install python-pptx ile kütüphaneyi yükleyin (eğer yoksa).
-# Görseller için: Yerel dosya yollarını belirtin (örneğin, indirilmiş stok görseller). AI-generated görselleri manuel ekleyin.
-# Kullanım: Bu kodu bir Python dosyasında çalıştırın, "KAPAN_Sunum.pptx" dosyası oluşur.
-
 from pptx import Presentation
 from pptx.util import Inches, Pt
 from pptx.dml.color import RGBColor
@@ -86,6 +81,3 @@ add_slide_with_title_and_content(1, "Karakterler 2/2 ve Kapanış", content12, i
 # Sunumu kaydet
 prs.save('KAPAN_Sunum.pptx')
 print("PPTX dosyası oluşturuldu: KAPAN_Sunum.pptx")
-
-# Not: Animasyonlar ve gradient arka planlar için .pptx dosyasını PowerPoint'te açıp manuel ekleyin.
-# Görsel yollarını gerçek dosya yollarıyla değiştirin (örneğin, indirilmiş resimler).
